@@ -1,16 +1,29 @@
-# React + Vite
+# KeenKeeper — Keep Your Friendships Alive
+Project Name: KeenKeeper ---
+Ei project-ti diye khub shohoje bondhuder list manage kora jay. Eta visual dashboard-er maddhome user-ke stats dekhay. Onek easily friends der sathe contact kora jai..
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🛠️ Technologies Used
+- **React.js** (Frontend Library)
+- **Vite** (Build Tool)
+- **Tailwind CSS** (Styling)
+- **Lucide React** (Icons)
 
-Currently, two official plugins are available:
+## ✨ Features
+- **Responsive UI:** Mobile, Tablet, ebong Desktop-er jonno optimized.
+- **Dynamic Stats:** Dashboard-e realtime total friends-er count dekha jay.
+- **Modern Design:** Tailwind CSS bebohar kore modern layout kora hoyeche.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+  
+## 📦 Installation & Setup
 
-## React Compiler
+Prothome repository-ti clone koro:
+`git clone https://github.com/your-username/your-repo.git`
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Tarpor dependency install koro:
+`npm install`
 
-## Expanding the ESLint configuration
+Project-ti run koro:
+`npm run dev`
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+Developed by **Eyasin**
