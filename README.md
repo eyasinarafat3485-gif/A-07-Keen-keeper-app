@@ -1,6 +1,6 @@
 # KeenKeeper — Keep Your Friendships Alive
 Project Name: KeenKeeper ---
-Ei project-ti diye khub shohoje bondhuder list manage kora jay. Eta visual dashboard-er maddhome user-ke stats dekhay. Onek easily friends der sathe contact kora jai..
+Ei project-ti diye khub shohoje bondhuder list manage kora jay. Eta visual dashboard-er maddhome user-ke stats dekhay. Onek easily friends der sathe contact kora jai.. "KeenKeeper is a streamlined personal relationship management tool designed to help you organize and maintain your social circle with ease. Featuring an intuitive visual dashboard, it provides real-time statistics on your connections and simplifies the way you stay in touch with friends, ensuring no meaningful relationship is ever overlooked.
 
 ## 🛠️ Technologies Used
 - **React.js** (Frontend Library)
