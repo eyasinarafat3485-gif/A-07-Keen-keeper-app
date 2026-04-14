@@ -1,7 +1,5 @@
 import React, { use } from 'react';
 import { BiArchive, BiBell, BiMessageSquare, BiPhone, BiVideo } from 'react-icons/bi';
-import { BsTrash2 } from 'react-icons/bs';
-import { FiDelete } from 'react-icons/fi';
 import { MdDelete } from 'react-icons/md';
 import { useParams } from 'react-router';
 
@@ -17,6 +15,14 @@ const FriendsDetails = () => {
 
     const expectedFriend = friends.find(friend => friend.id == id);
     console.log(expectedFriend)
+    
+    // const [callInfo, setCallInfo]= useState([]);
+    
+    const handleCallBtn=(id)=>{
+        console.log(id)
+    }
+   
+
     return (
         <div className='bg-slate-50 min-h-[60vh] px-8 font-sans py-15'>
             <div className='w-[85%] mx-auto flex flex-col md:flex-row gap-6'>
@@ -95,14 +101,17 @@ const FriendsDetails = () => {
                     <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
                         <h4 className="text-lg font-bold text-emerald-800 mb-6">Quick Check-In</h4>
                         <div className="grid grid-cols-3 gap-4">
-                            <button className="flex flex-col items-center justify-center gap-3 p-6 bg-slate-50 rounded-xl border border-transparent cursor-pointer hover:border-emerald-700 transition-all group">
+
+                            <button onClick={()=>handleCallBtn(id)} className="flex flex-col items-center justify-center gap-3 p-6 bg-slate-50 rounded-xl border border-transparent cursor-pointer hover:border-emerald-700 transition-all group">
                                 <BiPhone size={28} className="text-slate-700 group-hover:text-emerald-600" />
                                 <span className="text-slate-600 font-medium">Call</span>
                             </button>
+
                             <button className="flex flex-col items-center justify-center gap-3 p-6 bg-slate-50 rounded-xl border border-transparent cursor-pointer hover:border-emerald-700 transition-all group">
                                 <BiMessageSquare size={28} className="text-slate-700 group-hover:text-emerald-600" />
                                 <span className="text-slate-600 font-medium">Text</span>
                             </button>
+
                             <button className="flex flex-col items-center justify-center gap-3 p-6 bg-slate-50 rounded-xl border border-transparent cursor-pointer hover:border-emerald-700 transition-all group">
                                 <BiVideo size={28} className="text-slate-700 group-hover:text-emerald-600" />
                                 <span className="text-slate-600 font-medium">Video</span>
