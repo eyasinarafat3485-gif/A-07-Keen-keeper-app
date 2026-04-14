@@ -32,7 +32,7 @@ const AllFriends = () => {
                                         }
                                     </div>
 
-                                    <span className={`px-3 py-1 mt-3 rounded-xl font-medium ${friend.status === 'active' ? 'text-green-600 bg-green-100' :
+                                    <span className={`p-2 mt-3 rounded-xl font-medium ${friend.status === 'active' ? 'text-green-600 bg-green-100' :
                                             friend.status === 'inactive' ? 'text-red-600 bg-red-100' :
                                                 friend.status === 'overdue' ? 'text-purple-600 bg-purple-100' :
                                                     'text-gray-600 bg-gray-100'}`}>
