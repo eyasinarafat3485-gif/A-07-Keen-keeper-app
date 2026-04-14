@@ -16,13 +16,11 @@ const FriendsDetails = () => {
 
     const expectedFriend = friends.find(friend => friend.id == id);
     // console.log(expectedFriend)
-    
-    const {handleCall, handleText, handleVideo}=useContext(FriendContext);
-    console.log(handleCall, 'fam context')
 
-   
-   
-   
+    const { handleCall, handleText, callInfo, handleVideo } = useContext(FriendContext);
+    console.log(handleCall, callInfo, 'fam context')
+
+
     return (
         <div className='bg-slate-50 min-h-[60vh] px-8 font-sans py-15'>
             <div className='w-[85%] mx-auto flex flex-col md:flex-row gap-6'>
@@ -72,13 +70,13 @@ const FriendsDetails = () => {
                     <div className="grid grid-cols-3 gap-6">
                         <div className="bg-white px-6 py-10 rounded-xl border border-gray-100 shadow-sm text-center">
                             <h3 className="text-4xl font-bold text-slate-700">{expectedFriend.daysSinceContact}</h3>
-                                <span className='text-3xl font-semibold text-gray-500'>{expectedFriend.days_since_contact}</span>
-                                <p className="text-slate-400 text-sm mt-1">Days Since Contact</p>                          
+                            <span className='text-3xl font-semibold text-gray-500'>{expectedFriend.days_since_contact}</span>
+                            <p className="text-slate-400 text-sm mt-1">Days Since Contact</p>
                         </div>
 
-                        <div className="bg-white px-6 py-10 rounded-xl border border-gray-100 shadow-sm text-center">                 
-                                <span className='text-3xl font-semibold text-gray-500'>{expectedFriend.goal}</span>
-                                <p className="text-slate-400 text-sm mt-1">Goal (Days)</p>
+                        <div className="bg-white px-6 py-10 rounded-xl border border-gray-100 shadow-sm text-center">
+                            <span className='text-3xl font-semibold text-gray-500'>{expectedFriend.goal}</span>
+                            <p className="text-slate-400 text-sm mt-1">Goal (Days)</p>
                         </div>
                         <div className="bg-white px-6 py-10 rounded-xl border border-gray-100 shadow-sm text-center">
                             <span className='text-3xl font-semibold text-gray-500'>{expectedFriend.next_due_date}</span>
@@ -101,28 +99,28 @@ const FriendsDetails = () => {
                     <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
                         <h4 className="text-lg font-bold text-emerald-800 mb-6">Quick Check-In</h4>
                         <div className="grid grid-cols-3 gap-4">
-                        
+
                             {/* <button onClick={()=> handleCall(expectedFriend)} className='btn btn-primary '>Call btn</button>
                             <button className='btn '>Text btn</button>
                             <button className='btn btn-primary'>Video btn</button> */}
-                   
-                            
-                           <button onClick={()=> handleCall(expectedFriend)} className="flex flex-col items-center justify-center gap-3 p-6 bg-slate-50 rounded-xl border border-transparent cursor-pointer hover:border-emerald-700 transition-all group">
+
+
+                            <button onClick={() => handleCall(expectedFriend)} className="flex flex-col items-center justify-center gap-3 p-6 bg-slate-50 rounded-xl border border-transparent cursor-pointer hover:border-emerald-700 transition-all group">
                                 <BiPhone size={28} className="text-slate-700 group-hover:text-emerald-600" />
                                 <span className="text-slate-600 font-medium">Call</span>
-                            </button> 
+                            </button>
 
-                            <button onClick={()=>handleText(expectedFriend)} className="flex flex-col items-center justify-center gap-3 p-6 bg-slate-50 rounded-xl border border-transparent cursor-pointer hover:border-emerald-700 transition-all group">
+                            <button onClick={() => handleText(expectedFriend)} className="flex flex-col items-center justify-center gap-3 p-6 bg-slate-50 rounded-xl border border-transparent cursor-pointer hover:border-emerald-700 transition-all group">
                                 <BiMessageSquare size={28} className="text-slate-700 group-hover:text-emerald-600" />
                                 <span className="text-slate-600 font-medium">Text</span>
-                            </button>  
+                            </button>
 
-                       <button onClick={()=>handleVideo(expectedFriend)} className="flex flex-col items-center justify-center gap-3 p-6 bg-slate-50 rounded-xl border border-transparent cursor-pointer hover:border-emerald-700 transition-all group">
+                            <button onClick={() => handleVideo(expectedFriend)} className="flex flex-col items-center justify-center gap-3 p-6 bg-slate-50 rounded-xl border border-transparent cursor-pointer hover:border-emerald-700 transition-all group">
                                 <BiVideo size={28} className="text-slate-700 group-hover:text-emerald-600" />
                                 <span className="text-slate-600 font-medium">Video</span>
-                            </button>  
+                            </button>
                         </div>
-                     </div>  
+                    </div>
 
                 </div>
             </div>
