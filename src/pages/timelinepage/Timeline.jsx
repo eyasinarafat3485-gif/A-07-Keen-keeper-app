@@ -11,7 +11,7 @@ const Timeline = () => {
     ];
 
     return (
-        <div className='min-h-[60vh] w-[85%] mx-auto py-10'>
+        <div className='min-h-[60vh] w-[95%] md:w-[85%] mx-auto py-10'>
             <h2 className='text-5xl font-bold mb-8'> Timeline </h2>
 
             {allHistory.length === 0 ? (

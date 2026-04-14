@@ -8,10 +8,10 @@ const AllFriends = () => {
     // console.log(friends)
     return (
         <div className='bg-slate-50 min-h-screen px-8 font-sans'>
-            <div className=' w-[85%] mx-auto'>
+            <div className=' w-[95%] md:w-[85%] mx-auto'>
             <h2 className='font-bold text-3xl pb-5'>Your Friends</h2>
             </div>
-            <div className='pb-15 w-[85%] mx-auto grid grid-cols-1 md:grid-cols-4 gap-5'>
+            <div className='pb-15  w-[95%] md:w-[85%] mx-auto grid grid-cols-1 md:grid-cols-4 gap-5'>
                 
                 {
                     friends.map((friend, index) => {

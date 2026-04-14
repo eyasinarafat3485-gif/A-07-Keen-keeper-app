@@ -23,10 +23,9 @@ const FriendsDetails = () => {
 
     return (
         <div className='bg-slate-50 min-h-[60vh] px-8 font-sans py-15'>
-            <div className='w-[85%] mx-auto flex flex-col md:flex-row gap-6'>
+            <div className=' w-[95%] md:w-[95%] mx-auto flex flex-col md:flex-row gap-6'>
 
-                <div className="w-80 flex flex-col gap-6">
-                    {/* Profile Card */}
+                <div className="md:w-[80%] mx-auto w-[95%] flex flex-col gap-6">
                     <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-100 text-center">
                         <div ><img className="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4" src={expectedFriend.picture} alt="" /></div>
                         <h2 className="text-xl font-bold text-slate-800">{expectedFriend.name}</h2>
@@ -49,7 +48,6 @@ const FriendsDetails = () => {
                         <p className="text-xs text-slate-400 mt-2">Preferred: {expectedFriend.email}</p>
                     </div>
 
-                    {/* Action Buttons */}
                     <div className="flex flex-col gap-2">
                         <button className="flex items-center justify-center gap-2 bg-white p-3 rounded-lg border border-gray-200 text-slate-700 hover:bg-green-50">
                             <BiBell size={18} /> Snooze 2 Weeks
@@ -63,10 +61,8 @@ const FriendsDetails = () => {
                     </div>
                 </div>
 
-                {/* Main Content Section  */}
                 <div className="flex-1 flex flex-col gap-6">
 
-                    {/* Top Stats Boxes */}
                     <div className="grid grid-cols-3 gap-6">
                         <div className="bg-white px-6 py-10 rounded-xl border border-gray-100 shadow-sm text-center">
                             <h3 className="text-4xl font-bold text-slate-700">{expectedFriend.daysSinceContact}</h3>
@@ -84,7 +80,6 @@ const FriendsDetails = () => {
                         </div>
                     </div>
 
-                    {/* Relationship Goal Box */}
                     <div className="bg-white px-6 py-10 rounded-xl border border-gray-100 shadow-sm flex justify-between items-start">
                         <div>
                             <h4 className="text-lg font-bold text-emerald-800">Relationship Goal</h4>
@@ -95,15 +90,9 @@ const FriendsDetails = () => {
                         </button>
                     </div>
 
-                    {/* Quick Check-In Box */}
                     <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
                         <h4 className="text-lg font-bold text-emerald-800 mb-6">Quick Check-In</h4>
                         <div className="grid grid-cols-3 gap-4">
-
-                            {/* <button onClick={()=> handleCall(expectedFriend)} className='btn btn-primary '>Call btn</button>
-                            <button className='btn '>Text btn</button>
-                            <button className='btn btn-primary'>Video btn</button> */}
-
 
                             <button onClick={() => handleCall(expectedFriend)} className="flex flex-col items-center justify-center gap-3 p-6 bg-slate-50 rounded-xl border border-transparent cursor-pointer hover:border-emerald-700 transition-all group">
                                 <BiPhone size={28} className="text-slate-700 group-hover:text-emerald-600" />

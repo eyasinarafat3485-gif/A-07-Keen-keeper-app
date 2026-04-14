@@ -11,7 +11,7 @@ const FriendDashboard = () => {
 
     return (
         <div className="bg-slate-50 min-h-screen p-8 font-sans py-15">
-            <div className="text-center w-[85%] mx-auto">
+            <div className="text-center  w-[95%] md:w-[85%] mx-auto">
                 <h1 className="text-4xl md:text-5xl font-bold text-slate-800 mb-4">
                     Friends to keep close in your life
                 </h1>
