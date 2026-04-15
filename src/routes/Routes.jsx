@@ -22,7 +22,7 @@ export const router = createBrowserRouter([
       },
       {
         path: "/friendsDetails/:id",
-        Component: FriendsDetails ,
+        Component: FriendsDetails,
       },
       {
         path: "/stats",

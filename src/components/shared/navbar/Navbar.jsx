@@ -20,7 +20,7 @@ const Navbar = () => {
                 </NavLink>
             </li>
             <li>
-                <NavLink to="/stats-page" className={({ isActive }) => `font-semibold md:mr-2 ${isActive ? "text-orange-600 border-2 border-orange-600" : ""}`}><ImStatsDots />
+                <NavLink to="/stats" className={({ isActive }) => `font-semibold md:mr-2 ${isActive ? "text-orange-600 border-2 border-orange-600" : ""}`}><ImStatsDots />
                     Stats
                 </NavLink>
             </li>

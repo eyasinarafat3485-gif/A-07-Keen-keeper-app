@@ -16,7 +16,7 @@ const AllFriends = () => {
                 {
                     friends.map((friend, index) => {
                         return (
-                            <Link to={`/friendsDetails/${friend.id}`} key={index} className="card bg-base-100 shadow-sm ">
+                            <Link to={`/friendsDetails/${friend.id}`} key={index} className="card bg-base-100 shadow-sm hover:shadow-xl ">
                                 <figure>
                                     <img className="w-40 h-40 rounded-full mt-5"
                                         src={friend.picture} />
@@ -28,13 +28,13 @@ const AllFriends = () => {
                                     <p className="text-xl font-semibold text-gray-500">{friend.days_since_contact}d ago</p>
                                     <div >
                                         {
-                                            friend.tags.map((tag, ind) => <div key={ind} className="badge bg-orange-100 rounded-xl text-orange-600 mr-2 p-2 font-semibold mx-auto gap-5 py-4">{tag}</div>)
+                                            friend.tags.map((tag, ind) => <div key={ind} className="badge border border-orange-600 bg-orange-100 rounded-xl text-orange-600 mr-2 p-2 font-semibold mx-auto gap-5 py-4">{tag}</div>)
                                         }
                                     </div>
 
-                                    <span className={`p-2 mt-3 rounded-xl font-medium ${friend.status === 'active' ? 'text-green-600 bg-green-100' :
-                                            friend.status === 'inactive' ? 'text-red-600 bg-red-100' :
-                                                friend.status === 'overdue' ? 'text-purple-600 bg-purple-100' :
+                                    <span className={`p-2 mt-3 rounded-xl font-medium ${friend.status === 'active' ? 'text-green-600 bg-green-100 border-2 border-green-600' :
+                                            friend.status === 'inactive' ? 'text-red-600 bg-red-100 border-2 border-red-600' :
+                                                friend.status === 'overdue' ? 'text-yellow-600 border-2 border-yellow-600 bg-yellow-100' :
                                                     'text-gray-600 bg-gray-100'}`}>
                                         {friend.status}
                                     </span>

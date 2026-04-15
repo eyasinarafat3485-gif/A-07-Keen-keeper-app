@@ -22,10 +22,10 @@ const FriendsDetails = () => {
 
 
     return (
-        <div className='bg-slate-50 min-h-[60vh] px-8 font-sans py-15'>
-            <div className=' w-[95%] md:w-[95%] mx-auto flex flex-col md:flex-row gap-6'>
+        <div className='bg-slate-50 min-h-[60vh] px-4 md:px-8 font-sans py-15'>
+            <div className=' w-[85%]  mx-auto flex flex-col md:flex-row gap-2 md:gap-6'>
 
-                <div className="md:w-[80%] mx-auto w-[95%] flex flex-col gap-6">
+                <div className=" mx-auto  flex flex-col gap-2 md:gap-6">
                     <div className="bg-white p-5 rounded-xl shadow-sm border border-gray-100 text-center">
                         <div ><img className="w-24 h-24 bg-gray-300 rounded-full mx-auto mb-4" src={expectedFriend.picture} alt="" /></div>
                         <h2 className="text-xl font-bold text-slate-800">{expectedFriend.name}</h2>
@@ -61,9 +61,9 @@ const FriendsDetails = () => {
                     </div>
                 </div>
 
-                <div className="flex-1 flex flex-col gap-6">
+                <div className="flex-1 flex flex-col gap-2 md:gap-6">
 
-                    <div className="grid grid-cols-3 gap-6">
+                    <div className="grid grid-cols-3 gap-2 md:gap-6">
                         <div className="bg-white px-6 py-10 rounded-xl border border-gray-100 shadow-sm text-center">
                             <h3 className="text-4xl font-bold text-slate-700">{expectedFriend.daysSinceContact}</h3>
                             <span className='text-3xl font-semibold text-gray-500'>{expectedFriend.days_since_contact}</span>

@@ -11,9 +11,9 @@ createRoot(document.getElementById('root')).render(
   <StrictMode>
     <FriendConProvider>
 
-    <RouterProvider router={router} />
-    <ToastContainer />
-    
+      <RouterProvider router={router} />
+      <ToastContainer />
+
     </FriendConProvider>
   </StrictMode>
 )
