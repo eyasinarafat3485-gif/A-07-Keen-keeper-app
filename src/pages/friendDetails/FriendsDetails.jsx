@@ -82,31 +82,31 @@ const FriendsDetails = () => {
 
                     <div className="bg-white px-6 py-10 rounded-xl border border-gray-100 shadow-sm flex justify-between items-start">
                         <div>
-                            <h4 className="text-lg font-bold text-emerald-800">Relationship Goal</h4>
-                            <p className="text-slate-500 mt-4">Connect every <span className="font-bold text-slate-800">{expectedFriend.goal} days</span></p>
+                            <h4 className="text-lg font-bold text-orange-600">Relationship Goal</h4>
+                            <p className="text-slate-500 mt-4">Connect every <span className="font-bold text-orange-600">{expectedFriend.goal} days</span></p>
                         </div>
-                        <button className="px-4 py-1 border border-gray-200 rounded text-sm text-slate-600 hover:bg-gray-50 flex items-center gap-1">
+                        <button className="px-4 py-1 border border-gray-200 rounded text-sm text-orange-600 hover:bg-gray-50 flex items-center gap-1">
                             Edit
                         </button>
                     </div>
 
                     <div className="bg-white p-6 rounded-xl border border-gray-100 shadow-sm">
-                        <h4 className="text-lg font-bold text-emerald-800 mb-6">Quick Check-In</h4>
+                        <h4 className="text-lg font-bold text-orange-600 mb-6">Quick Check-In</h4>
                         <div className="grid grid-cols-3 gap-4">
 
-                            <button onClick={() => handleCall(expectedFriend)} className="flex flex-col items-center justify-center gap-3 p-6 bg-slate-50 rounded-xl border border-transparent cursor-pointer hover:border-emerald-700 transition-all group">
-                                <BiPhone size={28} className="text-slate-700 group-hover:text-emerald-600" />
-                                <span className="text-slate-600 font-medium">Call</span>
+                            <button onClick={() => handleCall(expectedFriend)} className="flex flex-col items-center justify-center gap-3 p-6 bg-slate-50 rounded-xl border border-transparent cursor-pointer hover:border-orange-700 transition-all group">
+                                <BiPhone size={28} className="text-orange-700 group-hover:text-orange-600" />
+                                <span className="text-orange-600 font-medium">Call</span>
                             </button>
 
-                            <button onClick={() => handleText(expectedFriend)} className="flex flex-col items-center justify-center gap-3 p-6 bg-slate-50 rounded-xl border border-transparent cursor-pointer hover:border-emerald-700 transition-all group">
-                                <BiMessageSquare size={28} className="text-slate-700 group-hover:text-emerald-600" />
-                                <span className="text-slate-600 font-medium">Text</span>
+                            <button onClick={() => handleText(expectedFriend)} className="flex flex-col items-center justify-center gap-3 p-6 bg-slate-50 rounded-xl border border-transparent cursor-pointer hover:border-orange-700 transition-all group">
+                                <BiMessageSquare size={28} className="text-orange-700 group-hover:text-orange-600" />
+                                <span className="text-orange-600 font-medium">Text</span>
                             </button>
 
-                            <button onClick={() => handleVideo(expectedFriend)} className="flex flex-col items-center justify-center gap-3 p-6 bg-slate-50 rounded-xl border border-transparent cursor-pointer hover:border-emerald-700 transition-all group">
-                                <BiVideo size={28} className="text-slate-700 group-hover:text-emerald-600" />
-                                <span className="text-slate-600 font-medium">Video</span>
+                            <button onClick={() => handleVideo(expectedFriend)} className="flex flex-col items-center justify-center gap-3 p-6 bg-slate-50 rounded-xl border border-transparent cursor-pointer hover:border-orange-700 transition-all group">
+                                <BiVideo size={28} className="text-orange-700 group-hover:text-orange-600" />
+                                <span className="text-orange-600 font-medium">Video</span>
                             </button>
                         </div>
                     </div>
