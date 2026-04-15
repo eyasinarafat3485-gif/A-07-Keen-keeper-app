@@ -10,15 +10,15 @@ const FriendConProvider = ({ children }) => {
 
     const handleCall = (curentFriend) => {
         setCallInfo([...callInfo, curentFriend]);
-        toast.success(`${curentFriend.name} added to a call again!`);
+        toast.success(`${curentFriend.name} added to a call!`);
     };
     const handleText = (curentFriend) => {
         setTextInfo([...textInfo, curentFriend]);
-        toast.success(`${curentFriend.name} added to a text again!`);
+        toast.success(`${curentFriend.name} added to a text!`);
     };
     const handleVideo = (curentFriend) => {
         setVideoInfo([...videoInfo, curentFriend]);
-        toast.success(`${curentFriend.name} added to a video call again!`);
+        toast.success(`${curentFriend.name} added to a video call!`);
     };
 
     const data = {

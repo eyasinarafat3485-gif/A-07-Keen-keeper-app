@@ -31,15 +31,15 @@ const FriendsDetails = () => {
                         <h2 className="text-xl font-bold text-slate-800">{expectedFriend.name}</h2>
 
                         <div className="flex flex-col items-center gap-2 mt-2">
-                            <span className={`px-3 py-1 mt-3 rounded-xl font-medium ${expectedFriend.status === 'active' ? 'text-green-600 bg-green-100' :
-                                expectedFriend.status === 'inactive' ? 'text-red-600 bg-red-100' :
-                                    expectedFriend.status === 'overdue' ? 'text-purple-600 bg-purple-100' :
+                            <span className={`px-3 py-1 mt-3 rounded-xl font-medium ${expectedFriend.status === 'active' ? 'text-green-600 bg-green-100 border-2 border-green-600' :
+                                expectedFriend.status === 'inactive' ? 'text-red-600 bg-red-100 border-2 border-red-600' :
+                                    expectedFriend.status === 'overdue' ? 'text-yellow-600 border-2 border-yellow-600 bg-yellow-100' :
                                         'text-gray-600 bg-gray-100'}`}>
                                 {expectedFriend.status}
                             </span>
                             <div >
                                 {
-                                    expectedFriend.tags.map((tag, ind) => <div key={ind} className="badge bg-orange-100 rounded-xl text-orange-600 mr-2 p-2 font-semibold mx-auto gap-5 py-4">{tag}</div>)
+                                    expectedFriend.tags.map((tag, ind) => <div key={ind} className="badge border border-orange-600 bg-orange-100 rounded-xl mr-2 text-orange-600 p-2 font-semibold py-4">{tag}</div>)
                                 }
                             </div>
                         </div>
