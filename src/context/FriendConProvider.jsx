@@ -9,43 +9,17 @@ const FriendConProvider = ({ children }) => {
     const [videoInfo, setVideoInfo] = useState([])
 
     const handleCall = (curentFriend) => {
-        console.log(curentFriend, 'IDDD');
-        const isExistCall = callInfo.find(friend => friend.id === curentFriend.id);
-        if (isExistCall) {
-            toast.error(`${curentFriend.name} is already called!`)
-            return;
-        }
-        else {
-            setCallInfo([...callInfo, curentFriend])
-            toast.success(`${curentFriend.name} is call.`)
-        }
-    }
+        setCallInfo([...callInfo, curentFriend]);
+        toast.success(`${curentFriend.name} added to a call again!`);
+    };
     const handleText = (curentFriend) => {
-        console.log(curentFriend, 'IDDD');
-        const isExistText = textInfo.find(friend => friend.id === curentFriend.id);
-        if (isExistText) {
-            toast.error(`${curentFriend.name} is already text!`)
-            return;
-        }
-        else {
-            setTextInfo([...textInfo, curentFriend])
-            toast.success(`${curentFriend.name} is now a text.`)
-        }
-    }
-
+        setTextInfo([...textInfo, curentFriend]);
+        toast.success(`${curentFriend.name} added to a text again!`);
+    };
     const handleVideo = (curentFriend) => {
-        console.log(curentFriend, 'IDDD');
-        const isExistVideo = videoInfo.find(friend => friend.id === curentFriend.id);
-        if (isExistVideo) {
-            toast.error(`${curentFriend.name} is already video called!`)
-            return;
-        }
-        else {
-            setVideoInfo([...textInfo, curentFriend])
-            toast.success(`${curentFriend.name} is now invited a video call.`)
-        }
-
-    }
+        setVideoInfo([...videoInfo, curentFriend]);
+        toast.success(`${curentFriend.name} added to a video call again!`);
+    };
 
     const data = {
         handleVideo, handleText, handleCall,

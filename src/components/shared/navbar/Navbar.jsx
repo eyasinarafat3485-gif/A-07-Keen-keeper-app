@@ -16,7 +16,7 @@ const Navbar = () => {
             </li>
             <li>
                 <NavLink to="/timeline" className={({ isActive }) => `font-semibold md:mr-2 ${isActive ? "text-orange-600 border-2 border-orange-600" : ""}`}>
-                   <IoMdTime /> Timeline
+                    <IoMdTime /> Timeline
                 </NavLink>
             </li>
             <li>
