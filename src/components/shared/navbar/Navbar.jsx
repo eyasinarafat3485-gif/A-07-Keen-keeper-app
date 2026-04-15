@@ -28,7 +28,7 @@ const Navbar = () => {
     );
 
     return (
-        <div className="navbar bg-base-100 shadow-sm px-2 md:px-15">
+        <div className="navbar bg-base-100 shadow-sm px-5 md:px-15">
             <div className="navbar-start">
                 <img src={logoImg} alt="" />
             </div>
@@ -48,7 +48,7 @@ const Navbar = () => {
                     </div>
                     <ul
                         tabIndex={0}
-                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-30 p-2 shadow"
+                        className="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-35 p-2 shadow"
                     >
                         {links}
                     </ul>
