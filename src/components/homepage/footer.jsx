@@ -14,26 +14,26 @@ const Footer = () => {
                 <div className="flex flex-col items-center gap-4">
                     <span className="text-lg font-medium">Social Links</span>
                     <div className="flex gap-4">
-                        <a href="#" className="bg-white p-2 rounded-full text-[#214d3e] hover:bg-gray-200 transition-colors">
+                        <a href="#" className="bg-white p-2 rounded-full text-[#214d3e] hover:bg-gray-300 transition-colors">
                             <FaInstagram size={20} />
                         </a>
-                        <a href="#" className="bg-white p-2 rounded-full text-[#214d3e] hover:bg-gray-200 transition-colors">
+                        <a href="#" className="bg-white p-2 rounded-full text-[#214d3e] hover:bg-gray-300 transition-colors">
                             <FaFacebookF size={20} />
                         </a>
-                        <a href="#" className="bg-white p-2 rounded-full text-[#214d3e] hover:bg-gray-200 transition-colors">
+                        <a href="#" className="bg-white p-2 rounded-full text-[#214d3e] hover:bg-gray-300 transition-colors">
                             <FaTwitter size={20} />
                         </a>
                     </div>
                 </div>
             </div>
 
-            <div className="max-w-7xl mx-auto mt-16 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-xs text-gray-200 gap-4">
-                <p>© 2026 KeenKeeper. All rights reserved.</p>
+            <div className="max-w-7xl mx-auto mt-10 pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center text-xs text-gray-200 gap-4">
+                <p className='text-[15px]'>© 2026 KeenKeeper. All rights reserved.</p>
 
                 <div className="flex gap-8">
-                    <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-                    <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
-                    <a href="#" className="hover:text-white transition-colors">Cookies</a>
+                    <a href="#" className="hover:text-white transition-colors text-[15px]">Privacy Policy</a>
+                    <a href="#" className="hover:text-white transition-colors text-[15px]">Terms of Service</a>
+                    <a href="#" className="hover:text-white transition-colors text-[15px]">Cookies</a>
                 </div>
             </div>
         </footer>
