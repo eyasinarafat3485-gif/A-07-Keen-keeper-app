@@ -56,7 +56,7 @@ const Timeline = () => {
 
                             <div className="flex flex-col">
                                 <div className="flex items-baseline gap-2">
-                                    <h2 className="text-[#2D5A43] font-bold text-lg">
+                                    <h2 className="text-orange-600 font-bold text-lg">
                                         {history.type}
                                     </h2>
                                     <span className="text-[#6B7280] text-lg font-medium">
