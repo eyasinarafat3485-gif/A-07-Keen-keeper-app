@@ -8,6 +8,7 @@ Project Name: KeenKeeper ---
 - **React.js** (Frontend Library)
 - **Vite** (Build Tool)
 - **Tailwind CSS** (Styling)
+- **Daisyui** (design)
 - **React Router** (Routing)
 - **Lucide React** (Icons)
 
